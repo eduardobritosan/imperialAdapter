@@ -3,5 +3,9 @@
     "ts"
   ],
   "spec": "./tests/**/*.spec.ts",
-  "require": "ts-node/register"
+  "require": [
+    "ts-node/register",
+    "source-map-support/register"
+  ],
+  "recursive": true
 }

@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "nyc mocha",
     "start-combat": "tsc-watch --onSuccess \"node dist/ejercicio-1/main\"",
     "start-converter": "tsc-watch --onSuccess \"node dist/ejercicio-2/main\"",
     "start-dsiflix": "tsc-watch --onSuccess \"node dist/ejercicio-3/main\"",
@@ -26,8 +26,23 @@
     "eslint": "^7.22.0",
     "eslint-config-google": "^0.14.0",
     "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "source-map-support": "^0.5.19",
     "ts-node": "^9.1.1",
     "tsc-watch": "^4.2.9",
     "typedoc": "^0.20.32"
+  },
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "html"
+    ],
+    "all": true
   }
 }

@@ -8,6 +8,6 @@ export class MockFighter extends Fighter {
   }
 
   public talk() {
-    return 'I\'m Mock I really don\'t exist';
+    return `I\'m ${this.getName()} I really don\'t exist`;
   }
 }

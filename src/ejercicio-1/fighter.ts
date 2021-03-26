@@ -51,4 +51,6 @@ export abstract class Fighter {
   public setSpeed(speed: number) {
     this.speed = speed;
   }
+
+  public abstract talk(): string;
 }

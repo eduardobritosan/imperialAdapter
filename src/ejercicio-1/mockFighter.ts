@@ -6,4 +6,8 @@ export class MockFighter extends Fighter {
     defense: number, speed: number) {
     super(name, height, weight, attack, defense, speed);
   }
+
+  public talk() {
+    return 'I\'m Mock I really don\'t exist';
+  }
 }

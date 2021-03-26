@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -75,40 +75,40 @@
 <a name='L16'></a><a href='#L16'>16</a>
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
-<a name='L19'></a><a href='#L19'>19</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L19'></a><a href='#L19'>19</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'mocha';
 import { expect } from 'chai';
 import { MockFighter } from '../../src/ejercicio-1/mockFighter';
 &nbsp;
-<span class="cstat-no" title="statement not covered" >describe('MockFighter methods tests', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-  const mock = <span class="cstat-no" title="statement not covered" >new MockFighter('Tester', 1.77, 117, 20, 30, 10);</span>
-<span class="cstat-no" title="statement not covered" >  it('mock is expected to be correctly initialized', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getName()).to.deep.equal('Tester');</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getHeight()).to.equal(1.77);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getWeight()).to.equal(117);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getAttack()).to.equal(20);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getDefense()).to.equal(30);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getSpeed()).to.equal(10);</span>
+describe('MockFighter methods tests', () =&gt; {
+  const mock = new MockFighter('Tester', 1.77, 117, 20, 30, 10);
+  it('mock is expected to be correctly initialized', () =&gt; {
+    expect(mock.getName()).to.deep.equal('Tester');
+    expect(mock.getHeight()).to.equal(1.77);
+    expect(mock.getWeight()).to.equal(117);
+    expect(mock.getAttack()).to.equal(20);
+    expect(mock.getDefense()).to.equal(30);
+    expect(mock.getSpeed()).to.equal(10);
   });
-<span class="cstat-no" title="statement not covered" >  it('mock is expected to say: I\'m Mock I really don\'t exist', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.talk()).to.deep.equal('I\'m Mock I really don\'t exist');</span>
+  it('mock is expected to say: I\'m Mock I really don\'t exist', () =&gt; {
+    expect(mock.talk()).to.deep.equal('I\'m Mock I really don\'t exist');
   });
 });
 &nbsp;</pre></td></tr></table></pre>
@@ -118,7 +118,7 @@ import { MockFighter } from '../../src/ejercicio-1/mockFighter';
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Mar 26 2021 17:15:27 GMT+0000 (hora estándar de Europa occidental)
+                at Fri Mar 26 2021 17:21:10 GMT+0000 (hora estándar de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>

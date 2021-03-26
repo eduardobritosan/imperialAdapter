@@ -12,4 +12,7 @@ describe('MockFighter methods tests', () => {
     expect(mock.getDefense()).to.equal(30);
     expect(mock.getSpeed()).to.equal(10);
   });
+  it('mock is expected to say: I\'m Mock I really don\'t exist', () => {
+    expect(mock.talk()).to.deep.equal('I\'m Mock I really don\'t exist');
+  });
 });

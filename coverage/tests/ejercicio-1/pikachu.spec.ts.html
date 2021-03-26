@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for tests/ejercicio-1/mockComicFighter.spec.ts</title>
+    <title>Code coverage report for tests/ejercicio-1/pikachu.spec.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">tests/ejercicio-1</a> mockComicFighter.spec.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">tests/ejercicio-1</a> pikachu.spec.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25.71% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/35</span>
+                <span class='fraction'>0/27</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/4</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25.71% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/35</span>
+                <span class='fraction'>0/27</span>
             </div>
         
             
@@ -92,22 +92,12 @@
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
 <a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a>
-<a name='L41'></a><a href='#L41'>41</a>
-<a name='L42'></a><a href='#L42'>42</a>
-<a name='L43'></a><a href='#L43'>43</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -117,13 +107,9 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -143,44 +129,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'mocha';
 import { expect } from 'chai';
-import { MockComicFighter } from '../../src/ejercicio-1/mockComicFighter';
+import { Pikachu } from '../../src/ejercicio-1/pikachu';
 &nbsp;
-describe('MockComicFighter methods tests', () =&gt; {
-  const date = new Date(1999, 6, 17);
-  const mockomic = new MockComicFighter('Mockomic', 1.77, 117, 20, 30, 10,
-    'Fakeman', date);
-  it('mockomic is expected to be correctly initialized', <span class="fstat-no" title="function not covered" >() =</span>&gt; {
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getName()).to.deep.equal('Mockomic');</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getHeight()).to.equal(1.77);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getWeight()).to.equal(117);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getAttack()).to.equal(20);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getDefense()).to.equal(30);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getSpeed()).to.equal(10);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getOriginComic()).to.equal('Fakeman');</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getDebutDate().getFullYear()).to.equal(1999);</span>
+<span class="cstat-no" title="statement not covered" >describe('Pikachu methods tests', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+  const pika = <span class="cstat-no" title="statement not covered" >new Pikachu();</span>
+<span class="cstat-no" title="statement not covered" >  it('Pikachu instance is expected to be correctly initialized', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getName()).to.deep.equal('Pikachu');</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getHeight()).to.equal(0.4);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getWeight()).to.equal(6);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getAttack()).to.equal(55);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getDefense()).to.equal(30);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getSpeed()).to.equal(90);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getDexNumber()).to.equal(25);</span>
   });
-  it('mockomic is expected to say: I\'m Mockomic I really don\'t exist', <span class="fstat-no" title="function not covered" >() =</span>&gt; {
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.talk()).to.deep.</span>
-      equal('I\'m Mockomic I really don\'t exist');
+<span class="cstat-no" title="statement not covered" >  it('Pikachu is expected to say: Pika pika!', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.talk()).to.deep.equal('Pika pika!');</span>
   });
-  it('mockomic is expected to change when using setters', <span class="fstat-no" title="function not covered" >() =</span>&gt; {
-<span class="cstat-no" title="statement not covered" >    mockomic.setName('Mockomicer');</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getName()).to.deep.equal('Mockomicer');</span>
-<span class="cstat-no" title="statement not covered" >    mockomic.setHeight(1.99);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getHeight()).to.equal(1.99);</span>
-<span class="cstat-no" title="statement not covered" >    mockomic.setWeight(99);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getWeight()).to.equal(99);</span>
-<span class="cstat-no" title="statement not covered" >    mockomic.setAttack(30);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getAttack()).to.equal(30);</span>
-<span class="cstat-no" title="statement not covered" >    mockomic.setDefense(40);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getDefense()).to.equal(40);</span>
-<span class="cstat-no" title="statement not covered" >    mockomic.setSpeed(50);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getSpeed()).to.equal(50);</span>
-<span class="cstat-no" title="statement not covered" >    mockomic.setOriginComic('Fakewoman');</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getOriginComic()).to.equal('Fakewoman');</span>
-    const date2 = <span class="cstat-no" title="statement not covered" >new Date(1998, 6, 17);</span>
-<span class="cstat-no" title="statement not covered" >    mockomic.setDebutDate(date2);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mockomic.getDebutDate().getFullYear()).to.equal(1998);</span>
+<span class="cstat-no" title="statement not covered" >  it('Pikachu instance is expected to change when using setters', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    pika.setName('Raichu');</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getName()).to.deep.equal('Raichu');</span>
+<span class="cstat-no" title="statement not covered" >    pika.setHeight(1.99);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getHeight()).to.equal(1.99);</span>
+<span class="cstat-no" title="statement not covered" >    pika.setWeight(99);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getWeight()).to.equal(99);</span>
+<span class="cstat-no" title="statement not covered" >    pika.setAttack(30);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getAttack()).to.equal(30);</span>
+<span class="cstat-no" title="statement not covered" >    pika.setDefense(40);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getDefense()).to.equal(40);</span>
+<span class="cstat-no" title="statement not covered" >    pika.setSpeed(50);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getSpeed()).to.equal(50);</span>
+<span class="cstat-no" title="statement not covered" >    pika.setDexNumber(26);</span>
+<span class="cstat-no" title="statement not covered" >    expect(pika.getDexNumber()).to.equal(26);</span>
   });
 });
 &nbsp;</pre></td></tr></table></pre>

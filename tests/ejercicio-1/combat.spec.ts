@@ -21,6 +21,6 @@ describe('combat methods tests', () => {
     expect(combat.effectiveness(goku, barry)).to.equal(2);
   });
   it('combat is expected to say that the winner is Goku', () => {
-    // expect(combat.start()).to.equal('Son Goku is the winner');
+    expect(combat.start()).to.equal('Son Goku is the winner');
   });
 });

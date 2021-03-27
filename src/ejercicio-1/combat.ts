@@ -3,8 +3,7 @@ import { DCFighter } from './dcFighter';
 import { Fighter } from './fighter';
 import { MarvelFighter } from './marvelFighter';
 import { Pokemon } from './pokemon';
-import { Goku } from './goku';
-import { Pikachu } from './pikachu';
+
 
 export class Combat<T extends Fighter, U extends Fighter> {
   private fighter1HP: number;
@@ -87,5 +86,52 @@ export class Combat<T extends Fighter, U extends Fighter> {
         }
     }
     return -1;
+  }
+
+  public damage(attacker: Fighter, defender: Fighter) {
+    const effectiveness = this.effectiveness(attacker, defender);
+    return 20 * (attacker.getAttack() / defender.getDefense()) *
+      effectiveness;
+  }
+
+  private showHealth(): void {
+    console.log(`${this.getFighter1().getName()}` +
+      ` HP: ${this.getFighter1HP().toFixed(2)}`);
+    console.log(`${this.getFighter2().getName()}` +
+      ` HP: ${this.getFighter2HP().toFixed(2)}`);
+  }
+
+  private printHit(attacker: Fighter, defender: Fighter): void {
+    console.log(`${attacker.talk()}`);
+    console.log(`${attacker.getName()} hits ${defender.getName()}` +
+      ` for ${this.damage(attacker, defender).toFixed(2)}`);
+  }
+
+  private checkWinner(): string {
+    const result = (this.getFighter1HP() > 0) ?
+      `${this.fighter1.getName()} is the winner` :
+      `${this.fighter2.getName()} is the winner`;
+
+    if (this.getFighter1HP() > 0) {
+      return result;
+    }
+    return result;
+  }
+
+  start(): string {
+    this.showHealth();
+    while (this.getFighter1HP() > 0 && this.getFighter2HP() > 0) {
+      this.setFighter2HP(this.getFighter2HP() - this.damage(this.getFighter1(),
+        this.getFighter2()));
+      this.printHit(this.getFighter1(), this.getFighter2());
+      this.showHealth();
+      if (this.getFighter2HP() > 0) {
+        this.setFighter1HP(this.getFighter1HP() - this.damage(
+          this.getFighter2(), this.getFighter1()));
+        this.printHit(this.getFighter2(), this.getFighter1());
+        this.showHealth();
+      }
+    }
+    return this.checkWinner();
   }
 }

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/ejercicio-1/ironMan.ts</title>
+    <title>Code coverage report for tests/ejercicio-1/pokedex.spec.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/ejercicio-1</a> ironMan.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">tests/ejercicio-1</a> pokedex.spec.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -71,34 +71,43 @@
 <a name='L12'></a><a href='#L12'>12</a>
 <a name='L13'></a><a href='#L13'>13</a>
 <a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { MarvelFighter } from './marvelFighter';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'mocha';
+import { expect } from 'chai';
+import { Pokedex } from '../../src/ejercicio-1/pokedex';
+import { Goku } from '../../src/ejercicio-1/goku';
+import { Pikachu } from '../../src/ejercicio-1/pikachu';
+import { Flash } from '../../src/ejercicio-1/flash';
 &nbsp;
-&nbsp;
-export class IronMan extends MarvelFighter {
-  constructor() {
-    const debutDate = new Date(1963, 2, 1);
-    super('Iron Man', 1.85, 102, 100, 100, 95,
-      'Tales of Suspense #39', debutDate, 'Anthony Edward Stark');
-  }
-&nbsp;
-  public talk() {
-    return 'I am Iron Man';
-  }
-}
+describe('Pokedex methods tests', () =&gt; {
+  const goku = new Goku();
+  const pika = new Pikachu();
+  const flash = new Flash();
+  const pokedex = new Pokedex();
+  it('pokedex is expected to be correctly add new elements', () =&gt; {
+    pokedex.add(goku, pika, flash);
+    expect(pokedex.print()).to.equal('Son Goku,Pikachu,The Flash');
+  });
+});
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

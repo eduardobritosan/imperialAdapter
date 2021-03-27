@@ -1,5 +1,8 @@
 import { Fighter } from './fighter';
 
+/**
+ * Abstract class that defines the shape of a Pokemon fighter.
+ */
 export abstract class Pokemon extends Fighter {
   constructor(name: string, height: number,
     weight: number, attack: number,

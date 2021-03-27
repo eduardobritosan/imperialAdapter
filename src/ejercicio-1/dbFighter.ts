@@ -1,6 +1,10 @@
 import { ComicFighter } from './comicFighter';
 
-
+/**
+ * Abstract class that defines Fighters from the
+ * Dragon Ball universe. Its defining attribute is their
+ * powerlevel.
+ */
 export abstract class DBFighter extends ComicFighter {
   constructor(name: string, height: number,
     weight: number, attack: number,

@@ -1,3 +1,7 @@
+/**
+ * Fighter class that sets up the behaviour and shape
+ * of all inheriting types of fighters.
+ */
 export abstract class Fighter {
   constructor(private name: string, private height: number,
     private weight: number, private attack: number,
@@ -52,5 +56,9 @@ export abstract class Fighter {
     this.speed = speed;
   }
 
+  /**
+   * Abstract method that defines that all fighters
+   * must be able to talk.
+   */
   public abstract talk(): string;
 }

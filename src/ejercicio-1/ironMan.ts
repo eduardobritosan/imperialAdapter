@@ -2,6 +2,9 @@ import { MarvelFighter } from './marvelFighter';
 
 
 export class IronMan extends MarvelFighter {
+  /**
+  * Initializes with the known values of Iron Man
+  */
   constructor() {
     const debutDate = new Date(1963, 2, 1);
     super('Iron Man', 1.85, 102, 100, 100, 95,

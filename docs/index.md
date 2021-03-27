@@ -23,6 +23,32 @@ Para tener la formacion correcta para cumplimentar los ejercicios propuestos, ha
 
 ## Ejercicio 1 - El combate definitivo
 
+Para el desarrollo de este ejercicio, se realizo el siguiente diseño de clases de acuerdo con las siguientes tabla
+
+||| Fighter ||| 
+| - |:-:| -:| -:| -:|
+|| ComicFighter || Pokemon
+| DCFighter | DBFighter | MarvelFighter |
+
+_Diseño de los luchadores_
+
+|| Pokedex | Combat ||
+| - |:-:| -:| -:| 
+
+_Diseño de las clases no luchadoras_
+
+Se escogio separar de esta manera los luchadores que provienen de comics tienen atributos en comun (Fecha de su primera publicacion, comic de origen) que los Pokemon no tienen. Una posible mejora seria separar dentro de los luchadores provenientes de comics los que son super heroes para no repetir el atributo RealName.
+
+Otra decision de diseño curiosa fue como se gestionó la efectividad de los ataques.
+
+Por una parte, esta fue la tabla:
+![Tabla de efectividad](img/e1-effectiveness.png)
+
+Y esta fue la solución dentro del código.
+![Codigo de efectividad](img/e1-effectiveness-implementation.png)
+
+Para testear las clases abstractas mientras se iba desarrollando se escribrieron clases Mock.
+
 ## Ejercicio 2 - Conversor de unidades
 
 ## Ejercicio 3 - DSIflix

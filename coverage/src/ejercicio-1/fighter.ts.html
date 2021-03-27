@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">51.35% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>19/37</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">72.22% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>13/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>16/16</span>
+                <span class='fraction'>16/20</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -113,7 +113,19 @@
 <a name='L54'></a><a href='#L54'>54</a>
 <a name='L55'></a><a href='#L55'>55</a>
 <a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-yes">13x</span>
@@ -169,60 +181,72 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export abstract class Fighter {
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >/**</span>
+ *<span class="fstat-no" title="function not covered" > Fighter class that <span class="cstat-no" title="statement not covered" >s</span>ets up the b</span>ehaviour <span class="cstat-no" title="statement not covered" >and shape</span>
+ * of all in<span class="cstat-no" title="statement not covered" >heriting types </span>of fighte<span class="cstat-no" title="statement not covered" >rs.</span>
+ */<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+export abstract class Fighter {
   constructor(private name: string, private height: number,
-    private weight: number, private attack: number,
-    private defense: number, private speed: number) {
+    priva<span class="fstat-no" title="function not covered" >te weigh</span>t: number, private attack: number,
+<span class="cstat-no" title="statement not covered" >    private defense: n</span>umber, private speed: number) {
   }
 &nbsp;
   public getName(): string {
     return this.name;
   }
 &nbsp;
-  public setName(name: string) {
-    this.name = name;
+  public <span class="fstat-no" title="function not covered" >setName(na</span>me: string) {
+<span class="cstat-no" title="statement not covered" >    this.name = name;</span>
   }
 &nbsp;
   public getHeight(): number {
-    return this.height;
+<span class="cstat-no" title="statement not covered" >    return this.height;</span>
   }
 &nbsp;
   public setHeight(height: number) {
-    this.height = height;
+<span class="cstat-no" title="statement not covered" >    this.height = height</span>;
   }
 &nbsp;
   public getWeight(): number {
-    return this.weight;
+<span class="cstat-no" title="statement not covered" >    return this.weight;</span>
   }
 &nbsp;
   public setWeight(weight: number) {
-    this.weight = weight;
+<span class="cstat-no" title="statement not covered" >    this.weight = weight</span>;
   }
 &nbsp;
   public getAttack(): number {
-    return this.attack;
+<span class="cstat-no" title="statement not covered" >    return this.attack;</span>
   }
 &nbsp;
-  public setAttack(attack: number) {
-    this.attack = attack;
+  public <span class="fstat-no" title="function not covered" >setAttack(a</span>ttack: number) {
+<span class="cstat-no" title="statement not covered" >    this.attack = attack;</span>
   }
 &nbsp;
   public getDefense(): number {
-    return this.defense;
+<span class="cstat-no" title="statement not covered" >    return this.defense;</span>
   }
 &nbsp;
-  public setDefense(defense: number) {
-    this.defense = defense;
+  public <span class="fstat-no" title="function not covered" >setDefens</span>e(defense: number) {
+<span class="cstat-no" title="statement not covered" >    this.defense = defe</span>nse;
   }
 &nbsp;
   public getSpeed(): number {
-    return this.speed;
+<span class="cstat-no" title="statement not covered" >    return this.speed;</span>
   }
 &nbsp;
   public setSpeed(speed: number) {
     this.speed = speed;
   }
 &nbsp;
+  /**
+   * Abstract method that defines that all fighters
+   * must be able to talk.
+   */
   public abstract talk(): string;
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -232,7 +256,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Mar 27 2021 17:01:43 GMT+0000 (hora estándar de Europa occidental)
+                at Sat Mar 27 2021 20:10:27 GMT+0000 (hora estándar de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>

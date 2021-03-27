@@ -1,5 +1,8 @@
 import { Fighter } from './fighter';
-
+/**
+ * Class that defines fighters who come from comic books.
+ * Has attributes originComic and debutDate.
+ */
 export abstract class ComicFighter extends Fighter {
   constructor(name: string, height: number,
     weight: number, attack: number,

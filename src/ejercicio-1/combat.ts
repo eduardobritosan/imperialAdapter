@@ -4,7 +4,9 @@ import { Fighter } from './fighter';
 import { MarvelFighter } from './marvelFighter';
 import { Pokemon } from './pokemon';
 
-
+/**
+ * Class that handles combat between two fighters of any type
+ */
 export class Combat<T extends Fighter, U extends Fighter> {
   private fighter1HP: number;
   private fighter2HP: number;
@@ -45,7 +47,13 @@ export class Combat<T extends Fighter, U extends Fighter> {
   public setFighter2(fighter2: U): void {
     this.fighter2 = fighter2;
   }
-
+  /**
+   * Calcs the effectiveness of an attack based on the universe of
+   * the attacker and defender.
+   * @param type1 The attacking fighter
+   * @param type2 The defending fighter
+   * @returns The effectiveness, that can be either 0.5, 1 or 2.
+   */
   public effectiveness(type1: Fighter, type2: Fighter): number {
     switch (true) {
       case type1 instanceof DBFighter:
@@ -87,13 +95,21 @@ export class Combat<T extends Fighter, U extends Fighter> {
     }
     return -1;
   }
-
+  /**
+   * Method that calcs how much damage an attack will do.
+   * @param attacker Attacking fighter
+   * @param defender Defending fighter
+   * @returns How much damage did an attack deal
+   */
   public damage(attacker: Fighter, defender: Fighter) {
     const effectiveness = this.effectiveness(attacker, defender);
     return 20 * (attacker.getAttack() / defender.getDefense()) *
       effectiveness;
   }
 
+  /**
+   * Shows the health of both fighters
+   */
   private showHealth(): void {
     console.log(`${this.getFighter1().getName()}` +
       ` HP: ${this.getFighter1HP().toFixed(2)}`);
@@ -101,12 +117,19 @@ export class Combat<T extends Fighter, U extends Fighter> {
       ` HP: ${this.getFighter2HP().toFixed(2)}`);
   }
 
+  /**
+   * Prints the current hit
+   * @param attacker Attacking fighter
+   * @param defender Defending fighter
+   */
   private printHit(attacker: Fighter, defender: Fighter): void {
     console.log(`${attacker.talk()}`);
     console.log(`${attacker.getName()} hits ${defender.getName()}` +
       ` for ${this.damage(attacker, defender).toFixed(2)}`);
   }
-
+  /**
+   * Returns a string naming the winner of the fight
+   */
   private checkWinner(): string {
     const result = (this.getFighter1HP() > 0) ?
       `${this.fighter1.getName()} is the winner` :
@@ -118,6 +141,10 @@ export class Combat<T extends Fighter, U extends Fighter> {
     return result;
   }
 
+  /**
+   * Method that starts the combat.
+   * @returns the string that declare the winner.
+   */
   start(): string {
     this.showHealth();
     while (this.getFighter1HP() > 0 && this.getFighter2HP() > 0) {

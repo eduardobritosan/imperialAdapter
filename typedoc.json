@@ -1,4 +1,17 @@
 {
-  "entryPoints": [],
+  "entryPoints": [
+    "src/ejercicio-1/combat.ts",
+    "src/ejercicio-1/pokemon.ts",
+    "src/ejercicio-1/comicFighter.ts",
+    "src/ejercicio-1/dbFighter.ts",
+    "src/ejercicio-1/fighter.ts",
+    "src/ejercicio-1/dcFighter.ts",
+    "src/ejercicio-1/flash.ts",
+    "src/ejercicio-1/goku.ts",
+    "src/ejercicio-1/ironMan.ts",
+    "src/ejercicio-1/marvelFighter.ts",
+    "src/ejercicio-1/pikachu.ts",
+    "src/ejercicio-1/pokedex.ts"
+  ],
   "out": "typedocs"
 }

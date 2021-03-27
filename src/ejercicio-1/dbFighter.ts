@@ -1,21 +1,21 @@
 import { ComicFighter } from './comicFighter';
 
 
-export abstract class DCFighter extends ComicFighter {
+export abstract class DBFighter extends ComicFighter {
   constructor(name: string, height: number,
     weight: number, attack: number,
     defense: number, speed: number,
     originComic: string, debutDate: Date,
-    private realName: string) {
+    private powerLevel: number) {
     super(name, height, weight, attack, defense, speed, originComic,
       debutDate);
   }
 
-  public getRealName(): string {
-    return this.realName;
+  public getPowerLevel(): number {
+    return this.powerLevel;
   }
 
-  public setRealName(realName: string) {
-    this.realName = realName;
+  public setPowerLevel(powerLevel: number) {
+    this.powerLevel = powerLevel;
   }
 }

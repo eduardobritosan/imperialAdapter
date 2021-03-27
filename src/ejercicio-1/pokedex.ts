@@ -24,4 +24,12 @@ export class Pokedex {
       return item.getName();
     }).join();
   }
+
+  public remove(name: string) {
+    this.getFighterList().forEach((item) => {
+      if (item.getName() == name) {
+        this.getFighterList().splice(this.getFighterList().indexOf(item), 1);
+      }
+    });
+  }
 }

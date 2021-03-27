@@ -14,4 +14,8 @@ describe('Pokedex methods tests', () => {
     pokedex.add(goku, pika, flash);
     expect(pokedex.print()).to.equal('Son Goku,Pikachu,The Flash');
   });
+  it('pokedex is expected to be correctly remove elements', () => {
+    pokedex.remove('Pikachu');
+    expect(pokedex.print()).to.equal('Son Goku,The Flash');
+  });
 });

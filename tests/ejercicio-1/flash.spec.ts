@@ -15,8 +15,8 @@ describe('Flash methods tests', () => {
     expect(barry.getDebutDate().getFullYear()).to.equal(2011);
     expect(barry.getRealName()).to.equal('Bartholomew Henry Allen');
   });
-  it('Flash is expected to say: I am the fastest man alive', () => {
-    expect(barry.talk()).to.deep.equal('I am the fastest man alive');
+  it('Flash is expected to say: I am the Flash, the fastest man alive', () => {
+    expect(barry.talk()).to.deep.equal('I am the Flash, the fastest man alive');
   });
   it('Flash instance is expected to change when using setters', () => {
     barry.setName('Johnny Quick');

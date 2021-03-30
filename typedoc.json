@@ -24,7 +24,11 @@
     "src/ejercicio-2/mass.ts",
     "src/ejercicio-2/length.ts",
     "src/ejercicio-2/mile.ts",
-    "src/ejercicio-2/km.ts"
+    "src/ejercicio-2/km.ts",
+    "src/ejercicio-2/second.ts",
+    "src/ejercicio-2/time.ts",
+    "src/ejercicio-2/minute.ts",
+    "src/ejercicio-2/hour.ts"
   ],
   "out": "typedocs"
 }

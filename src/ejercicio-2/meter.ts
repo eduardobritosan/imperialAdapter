@@ -1,7 +1,7 @@
 import { Length } from './length';
 
 /**
- * Class that defines a meter magnitude, of the mass kind.
+ * Class that defines a meter magnitude, of the length kind.
  */
 export class Meter extends Length {
   constructor(value: number) {

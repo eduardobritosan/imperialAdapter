@@ -13,7 +13,7 @@ describe('Km methods tests', () => {
   });
   it('kmInstance is expected to be correctly converted when passed' +
     ' the correct strings', () => {
-      expect(kmInstance.convert('mile')).to.
+      expect(kmInstance.convert('miles')).to.
         equal(62.15040397762586);
       expect(kmInstance.convert('meters')).to.
         equal(100000);

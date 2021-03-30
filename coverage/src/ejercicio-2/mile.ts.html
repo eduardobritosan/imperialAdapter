@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/ejercicio-2/kg.ts</title>
+    <title>Code coverage report for src/ejercicio-2/mile.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/ejercicio-2</a> kg.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/ejercicio-2</a> mile.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -115,30 +115,30 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Mass } from './mass';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Length } from './length';
 &nbsp;
 /**
- * Class that defines a kilogram magnitude, of the mass kind.
+ * Class that defines a mile magnitude, of the mass kind.
  */
-export class Kg extends Mass {
+export class Mile extends Length {
   constructor(value: number) {
     super(value);
   }
 &nbsp;
   /**
-   * Method that returns the value of the kilogram in
-   * a different magnitude of the same type, in this case gram,
-   * and pound.
+   * Method that returns the value of the mile in
+   * a different magnitude of the same type, in this case kilometer,
+   * and meter.
    * @param destination the target magnitude
    * @returns the converted magnitude
    */
   convert(destination: string): number | undefined {
     destination = destination.toLocaleLowerCase();
     switch (destination) {
-      case 'grams':
-        return (this.getValue() * 1000);
-      case 'pounds':
-        return (this.getValue() * 2.205);
+      case 'kilometers':
+        return (this.getValue() * 1.609);
+      case 'meters':
+        return (this.getValue() * 1609);
       default:
         return undefined;
     }

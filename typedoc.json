@@ -22,7 +22,9 @@
     "src/ejercicio-2/gram.ts",
     "src/ejercicio-2/meter.ts",
     "src/ejercicio-2/mass.ts",
-    "src/ejercicio-2/length.ts"
+    "src/ejercicio-2/length.ts",
+    "src/ejercicio-2/mile.ts",
+    "src/ejercicio-2/km.ts"
   ],
   "out": "typedocs"
 }

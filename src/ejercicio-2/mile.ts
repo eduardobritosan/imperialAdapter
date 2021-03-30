@@ -1,17 +1,17 @@
 import { Length } from './length';
 
 /**
- * Class that defines a meter magnitude, of the mass kind.
+ * Class that defines a mile magnitude, of the mass kind.
  */
-export class Meter extends Length {
+export class Mile extends Length {
   constructor(value: number) {
     super(value);
   }
 
   /**
-   * Method that returns the value of the meter in
+   * Method that returns the value of the mile in
    * a different magnitude of the same type, in this case kilometer,
-   * and mile.
+   * and meter.
    * @param destination the target magnitude
    * @returns the converted magnitude
    */
@@ -19,9 +19,9 @@ export class Meter extends Length {
     destination = destination.toLocaleLowerCase();
     switch (destination) {
       case 'kilometers':
-        return (this.getValue() / 1000);
-      case 'miles':
-        return (this.getValue() / 1609);
+        return (this.getValue() * 1.609);
+      case 'meters':
+        return (this.getValue() * 1609);
       default:
         return undefined;
     }

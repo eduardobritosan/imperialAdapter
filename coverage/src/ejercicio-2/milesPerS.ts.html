@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/ejercicio-2/kmPerH.ts</title>
+    <title>Code coverage report for src/ejercicio-2/milesPerS.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/ejercicio-2</a> kmPerH.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/ejercicio-2</a> milesPerS.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -120,15 +120,15 @@
 /**
  * Class that defines a meter per second magnitude, of the speed kind.
  */
-export class KmPerH extends Speed {
+export class MilesPerS extends Speed {
   constructor(value: number) {
     super(value);
   }
 &nbsp;
   /**
-   * Method that returns the value of the kilometer per hour in
-   * a different magnitude of the same type, in this case meters per second,
-   * and miles per second.
+   * Method that returns the value of the Miles/Second in
+   * a different magnitude of the same type, in this case kilometers per hour,
+   * and meters per second.
    * @param destination the target magnitude
    * @returns the converted magnitude
    */
@@ -136,9 +136,9 @@ export class KmPerH extends Speed {
     destination = destination.toLocaleLowerCase();
     switch (destination) {
       case 'mpers':
-        return (this.getValue() / 3.6);
-      case 'milespers':
-        return (this.getValue() / 5794);
+        return (this.getValue() * 1609);
+      case 'kmperh':
+        return (this.getValue() * 5794);
       default:
         return undefined;
     }

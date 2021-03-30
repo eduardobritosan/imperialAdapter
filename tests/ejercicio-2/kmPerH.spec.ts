@@ -2,7 +2,7 @@ import 'mocha';
 import { expect } from 'chai';
 import { KmPerH } from '../../src/ejercicio-2/kmPerH';
 
-describe('meterPerSecond methods tests', () => {
+describe('kilometerPerHour methods tests', () => {
   const kmperhInstance = new KmPerH(100);
   it('kmperhInstance is expected to be correctly initialized', () => {
     expect(kmperhInstance.getValue()).to.equal(100);
@@ -14,9 +14,9 @@ describe('meterPerSecond methods tests', () => {
   it('kmperhInstance is expected to be correctly converted when passed' +
     ' the correct strings', () => {
       expect(kmperhInstance.convert('mpers')).to.
-        equal(33.3333);
+        equal(33.333333333333336);
       expect(kmperhInstance.convert('milespers')).to.
-        equal(0.0207124);
+        equal(0.020711080428028994);
     });
   it('kmperhInstance is expected to be return undefined when passed' +
     ' incorrect strings', () => {

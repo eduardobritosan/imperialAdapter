@@ -15,7 +15,8 @@
     "src/ejercicio-2/isConvertible.ts",
     "src/ejercicio-2/magnitude.ts",
     "src/ejercicio-2/mPerS.ts",
-    "src/ejercicio-2/speed.ts"
+    "src/ejercicio-2/speed.ts",
+    "src/ejercicio-2/kmPerH.ts"
   ],
   "out": "typedocs"
 }

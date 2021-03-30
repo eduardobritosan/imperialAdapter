@@ -18,7 +18,8 @@
     "src/ejercicio-2/speed.ts",
     "src/ejercicio-2/kmPerH.ts",
     "src/ejercicio-2/kg.ts",
-    "src/ejercicio-2/pound.ts"
+    "src/ejercicio-2/pound.ts",
+    "src/ejercicio-2/gram.ts"
   ],
   "out": "typedocs"
 }

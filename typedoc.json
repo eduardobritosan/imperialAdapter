@@ -19,7 +19,10 @@
     "src/ejercicio-2/kmPerH.ts",
     "src/ejercicio-2/kg.ts",
     "src/ejercicio-2/pound.ts",
-    "src/ejercicio-2/gram.ts"
+    "src/ejercicio-2/gram.ts",
+    "src/ejercicio-2/meter.ts",
+    "src/ejercicio-2/mass.ts",
+    "src/ejercicio-2/length.ts"
   ],
   "out": "typedocs"
 }

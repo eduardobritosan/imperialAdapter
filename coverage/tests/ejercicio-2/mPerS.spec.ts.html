@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>16/16</span>
+                <span class='fraction'>0/13</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>16/16</span>
+                <span class='fraction'>0/13</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -83,56 +83,56 @@
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'mocha';
 import { expect } from 'chai';
 import { MPerS } from '../../src/ejercicio-2/mPerS';
 &nbsp;
-describe('meterPerSecond methods tests', () =&gt; {
-  const mpersInstance = new MPerS(4000);
-  it('mpersInstance is expected to be correctly initialized', () =&gt; {
-    expect(mpersInstance.getValue()).to.equal(4000);
+<span class="cstat-no" title="statement not covered" >describe('meterPerSecond methods tests', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+  const mpersInstance = <span class="cstat-no" title="statement not covered" >new MPerS(4000);</span>
+<span class="cstat-no" title="statement not covered" >  it('mpersInstance is expected to be correctly initialized', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    expect(mpersInstance.getValue()).to.equal(4000);</span>
   });
-  it('mpersInstance is expected to change when using setters', () =&gt; {
-    mpersInstance.setValue(3000);
-    expect(mpersInstance.getValue()).to.equal(3000);
+<span class="cstat-no" title="statement not covered" >  it('mpersInstance is expected to change when using setters', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    mpersInstance.setValue(3000);</span>
+<span class="cstat-no" title="statement not covered" >    expect(mpersInstance.getValue()).to.equal(3000);</span>
   });
-  it('mpersInstance is expected to be correctly converted when passed' +
-    ' the correct strings', () =&gt; {
-      expect(mpersInstance.convert('milespers')).to.
+<span class="cstat-no" title="statement not covered" >  it('mpersInstance is expected to be correctly converted when passed' +</span>
+    ' the correct strings', <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >      expect(mpersInstance.convert('milespers')).to.</span>
         equal(1.864512119328775637041640770665);
-      expect(mpersInstance.convert('KMperH')).to.
+<span class="cstat-no" title="statement not covered" >      expect(mpersInstance.convert('KMperH')).to.</span>
         equal(10800);
     });
-  it('mpersInstance is expected to be return undefined when passed' +
-    ' incorrect strings', () =&gt; {
-      expect(mpersInstance.convert('milespersecond')).to.be.undefined;
-      expect(mpersInstance.convert('KMperHour')).to.be.undefined;
+<span class="cstat-no" title="statement not covered" >  it('mpersInstance is expected to be return undefined when passed' +</span>
+    ' incorrect strings', <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >      expect(mpersInstance.convert('milespersecond')).to.be.undefined;</span>
+<span class="cstat-no" title="statement not covered" >      expect(mpersInstance.convert('KMperHour')).to.be.undefined;</span>
     });
 });
 &nbsp;</pre></td></tr></table></pre>
@@ -142,7 +142,7 @@ describe('meterPerSecond methods tests', () =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Mar 30 2021 18:07:56 GMT+0100 (hora de verano de Europa occidental)
+                at Tue Mar 30 2021 18:11:50 GMT+0100 (hora de verano de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>

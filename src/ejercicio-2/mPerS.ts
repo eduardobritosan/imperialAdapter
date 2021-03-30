@@ -27,6 +27,3 @@ export class MPerS extends Speed {
     }
   }
 }
-
-const instance: MPerS = new MPerS(4000);
-instance.convert('milespers');

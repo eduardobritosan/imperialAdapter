@@ -53,6 +53,10 @@ Para testear las clases abstractas mientras se iba desarrollando se escribrieron
 
 El diseño esta conformado por una clase padre base abstracta llamada Magnitude que posee el atributo value y ademas implementa la interfaz isConvertible. isConvertible implementa un metodo llamado convert, que recibe un string con el nombre de la magnitud a la que se quiere cambiar.
 
+La solucion adoptada para las conversiones fue la siguiente:
+
+![Switch conversion](img/e2-convert.png)
+
 ## Ejercicio 3 - DSIflix
 
 ## Conclusiones

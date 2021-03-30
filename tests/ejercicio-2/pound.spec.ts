@@ -14,9 +14,9 @@ describe('Pound methods tests', () => {
   it('poundInstance is expected to be correctly converted when passed' +
     ' the correct strings', () => {
       expect(poundInstance.convert('grams')).to.
-        equal(40000);
+        equal(18160);
       expect(poundInstance.convert('kilograms')).to.
-        equal(88.2);
+        equal(18.140589569160998);
     });
   it('poundInstance is expected to be return undefined when passed' +
     ' incorrect strings', () => {

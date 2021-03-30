@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for tests/ejercicio-1/mockFighter.spec.ts</title>
+    <title>Code coverage report for src/ejercicio-2/pound.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">tests/ejercicio-1</a> mockFighter.spec.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/ejercicio-2</a> pound.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>27/27</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>27/27</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -86,73 +86,64 @@
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'mocha';
-import { expect } from 'chai';
-import { MockFighter } from '../../src/ejercicio-1/mockFighter';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Mass } from './mass';
 &nbsp;
-describe('MockFighter methods tests', () =&gt; {
-  const mock = new MockFighter('Mock', 1.77, 117, 20, 30, 10);
-  it('mock is expected to be correctly initialized', () =&gt; {
-    expect(mock.getName()).to.deep.equal('Mock');
-    expect(mock.getHeight()).to.equal(1.77);
-    expect(mock.getWeight()).to.equal(117);
-    expect(mock.getAttack()).to.equal(20);
-    expect(mock.getDefense()).to.equal(30);
-    expect(mock.getSpeed()).to.equal(10);
-  });
-  it('mock is expected to say: I\'m Mock I really don\'t exist', () =&gt; {
-    expect(mock.talk()).to.deep.equal('I\'m Mock I really don\'t exist');
-  });
-  it('mock is expected to change when using setters', () =&gt; {
-    mock.setName('Mocker');
-    expect(mock.getName()).to.deep.equal('Mocker');
-    mock.setHeight(1.99);
-    expect(mock.getHeight()).to.equal(1.99);
-    mock.setWeight(99);
-    expect(mock.getWeight()).to.equal(99);
-    mock.setAttack(30);
-    expect(mock.getAttack()).to.equal(30);
-    mock.setDefense(40);
-    expect(mock.getDefense()).to.equal(40);
-    mock.setSpeed(50);
-    expect(mock.getSpeed()).to.equal(50);
-  });
-});
+/**
+ * Class that defines a pound magnitude, of the mass kind.
+ */
+export class Pound extends Mass {
+  constructor(value: number) {
+    super(value);
+  }
+&nbsp;
+  /**
+   * Method that returns the value of the pound in
+   * a different magnitude of the same type, in this case gram,
+   * and kilogram.
+   * @param destination the target magnitude
+   * @returns the converted magnitude
+   */
+  convert(destination: string): number | undefined {
+    destination = destination.toLocaleLowerCase();
+    switch (destination) {
+      case 'grams':
+        return (this.getValue() * 454);
+      case 'kilograms':
+        return (this.getValue() / 2.205);
+      default:
+        return undefined;
+    }
+  }
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

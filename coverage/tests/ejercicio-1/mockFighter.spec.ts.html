@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">29.63% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/27</span>
+                <span class='fraction'>27/27</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">29.63% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/27</span>
+                <span class='fraction'>27/27</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -96,29 +96,29 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'mocha';
@@ -127,30 +127,30 @@ import { MockFighter } from '../../src/ejercicio-1/mockFighter';
 &nbsp;
 describe('MockFighter methods tests', () =&gt; {
   const mock = new MockFighter('Mock', 1.77, 117, 20, 30, 10);
-  it('mock is expected to be correctly initialized', <span class="fstat-no" title="function not covered" >() =</span>&gt; {
-<span class="cstat-no" title="statement not covered" >    expect(mock.getName()).to.deep.equal('Mock');</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getHeight()).to.equal(1.77);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getWeight()).to.equal(117);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getAttack()).to.equal(20);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getDefense()).to.equal(30);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getSpeed()).to.equal(10);</span>
+  it('mock is expected to be correctly initialized', () =&gt; {
+    expect(mock.getName()).to.deep.equal('Mock');
+    expect(mock.getHeight()).to.equal(1.77);
+    expect(mock.getWeight()).to.equal(117);
+    expect(mock.getAttack()).to.equal(20);
+    expect(mock.getDefense()).to.equal(30);
+    expect(mock.getSpeed()).to.equal(10);
   });
-  it('mock is expected to say: I\'m Mock I really don\'t exist', <span class="fstat-no" title="function not covered" >() =</span>&gt; {
-<span class="cstat-no" title="statement not covered" >    expect(mock.talk()).to.deep.equal('I\'m Mock I really don\'t exist');</span>
+  it('mock is expected to say: I\'m Mock I really don\'t exist', () =&gt; {
+    expect(mock.talk()).to.deep.equal('I\'m Mock I really don\'t exist');
   });
-  it('mock is expected to change when using setters', <span class="fstat-no" title="function not covered" >() =</span>&gt; {
-<span class="cstat-no" title="statement not covered" >    mock.setName('Mocker');</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getName()).to.deep.equal('Mocker');</span>
-<span class="cstat-no" title="statement not covered" >    mock.setHeight(1.99);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getHeight()).to.equal(1.99);</span>
-<span class="cstat-no" title="statement not covered" >    mock.setWeight(99);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getWeight()).to.equal(99);</span>
-<span class="cstat-no" title="statement not covered" >    mock.setAttack(30);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getAttack()).to.equal(30);</span>
-<span class="cstat-no" title="statement not covered" >    mock.setDefense(40);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getDefense()).to.equal(40);</span>
-<span class="cstat-no" title="statement not covered" >    mock.setSpeed(50);</span>
-<span class="cstat-no" title="statement not covered" >    expect(mock.getSpeed()).to.equal(50);</span>
+  it('mock is expected to change when using setters', () =&gt; {
+    mock.setName('Mocker');
+    expect(mock.getName()).to.deep.equal('Mocker');
+    mock.setHeight(1.99);
+    expect(mock.getHeight()).to.equal(1.99);
+    mock.setWeight(99);
+    expect(mock.getWeight()).to.equal(99);
+    mock.setAttack(30);
+    expect(mock.getAttack()).to.equal(30);
+    mock.setDefense(40);
+    expect(mock.getDefense()).to.equal(40);
+    mock.setSpeed(50);
+    expect(mock.getSpeed()).to.equal(50);
   });
 });
 &nbsp;</pre></td></tr></table></pre>
@@ -160,7 +160,7 @@ describe('MockFighter methods tests', () =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Mar 30 2021 18:11:50 GMT+0100 (hora de verano de Europa occidental)
+                at Tue Mar 30 2021 18:16:04 GMT+0100 (hora de verano de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>

@@ -1,7 +1,7 @@
 import { Speed } from './speed';
 
 /**
- * Class that defines a meter per second magnitude, of the speed kind.
+ * Class that defines a miles per second magnitude, of the speed kind.
  */
 export class MilesPerS extends Speed {
   constructor(value: number) {

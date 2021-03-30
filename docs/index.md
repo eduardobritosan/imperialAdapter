@@ -51,6 +51,8 @@ Para testear las clases abstractas mientras se iba desarrollando se escribrieron
 
 ## Ejercicio 2 - Conversor de unidades
 
+El diseño esta conformado por una clase padre base abstracta llamada Magnitude que posee el atributo value y ademas implementa la interfaz isConvertible. isConvertible implementa un metodo llamado convert, que recibe un string con el nombre de la magnitud a la que se quiere cambiar.
+
 ## Ejercicio 3 - DSIflix
 
 ## Conclusiones

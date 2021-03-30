@@ -11,7 +11,11 @@
     "src/ejercicio-1/ironMan.ts",
     "src/ejercicio-1/marvelFighter.ts",
     "src/ejercicio-1/pikachu.ts",
-    "src/ejercicio-1/pokedex.ts"
+    "src/ejercicio-1/pokedex.ts",
+    "src/ejercicio-2/isConvertible.ts",
+    "src/ejercicio-2/magnitude.ts",
+    "src/ejercicio-2/mPerS.ts",
+    "src/ejercicio-2/speed.ts"
   ],
   "out": "typedocs"
 }

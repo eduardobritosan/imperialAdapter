@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">52.94% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/17</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/10</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">56.25% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/16</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -88,28 +88,28 @@
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -117,28 +117,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Fighter } from './fighter';
 /**
-<span class="cstat-no" title="statement not covered" > * Class that defines f</span>ighters who come from comic books.
- *<span class="fstat-no" title="function not covered" > Has attribut</span>es originComic and debutDate.
+ * Class that defines fighters who come from comic books.
+ * Has attributes originComic and debutDate.
  */
-export abstract class ComicFighter extends F<span class="cstat-no" title="statement not covered" >ighter {</span>
-  constructo<span class="cstat-no" title="statement not covered" >r(name: string, </span>height: number,
-<span class="cstat-no" title="statement not covered" >    weight: number, attack: number,</span>
+export abstract class ComicFighter extends Fighter {
+  constructor(name: string, height: number,
+    weight: number, attack: number,
     defense: number, speed: number, private originComic: string,
     private debutDate: Date) {
-    super<span class="fstat-no" title="function not covered" >(name, height, </span>weight, attack, defense, speed);
-  }<span class="cstat-no" title="statement not covered" ></span>
+    super(name, height, weight, attack, defense, speed);
+  }
 &nbsp;
   public getOriginComic(): string {
-    retur<span class="fstat-no" title="function not covered" >n this.originCo</span>mic;
-  }<span class="cstat-no" title="statement not covered" ></span>
+    return this.originComic;
+  }
 &nbsp;
   public setOriginComic(originComic: string) {
-    this.<span class="fstat-no" title="function not covered" >originComic =</span> originComic;
-  }<span class="cstat-no" title="statement not covered" ></span>
+    this.originComic = originComic;
+  }
 &nbsp;
   public getDebutDate(): Date {
-    retur<span class="fstat-no" title="function not covered" >n this.debutD</span>ate;
-  }<span class="cstat-no" title="statement not covered" ></span>
+    return this.debutDate;
+  }
 &nbsp;
   public setDebutDate(debutDate: Date) {
     this.debutDate = debutDate;
@@ -151,7 +151,7 @@ export abstract class ComicFighter extends F<span class="cstat-no" title="statem
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Mar 27 2021 20:10:27 GMT+0000 (hora estándar de Europa occidental)
+                at Tue Mar 30 2021 17:44:45 GMT+0100 (hora de verano de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>

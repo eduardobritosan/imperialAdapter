@@ -39,7 +39,8 @@
     ],
     "exclude": [
       "**/*.d.ts",
-      "coverage"
+      "coverage",
+      "typedocs"
     ],
     "reporter": [
       "html"

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">55.56% </span>
+                <span class="strong">90.91% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/18</span>
+                <span class='fraction'>10/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.33% </span>
+                <span class="strong">88.89% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>8/15</span>
+                <span class='fraction'>8/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">62.5% </span>
+                <span class="strong">90.91% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/16</span>
+                <span class='fraction'>10/11</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -119,19 +119,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -164,22 +164,22 @@ export class Pokedex {
 <span class="cstat-no" title="statement not covered" >    this.fighterList = fighterList;</span>
   }
   /**
-   * Adds<span class="fstat-no" title="function not covered" > any</span> number of fighters to the pokedex.
-   *<span class="cstat-no" title="statement not covered" > @param newFighters <span class="fstat-no" title="function not covered" >An</span>y number of new fighters to be added</span>
-   */<span class="cstat-no" title="statement not covered" ></span>
+   * Adds any number of fighters to the pokedex.
+   * @param newFighters Any number of new fighters to be added
+   */
   public add(...newFighters: Fighter[]) {
     newFighters.forEach((element) =&gt; {
       this.getFighterList().push(element);
-    });<span class="fstat-no" title="function not covered" ></span>
-  }<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
-  /**<span class="cstat-no" title="statement not covered" ></span>
+    });
+  }
+  /**
    * Method that returns a stringified list.
    * @returns A stringified list of the names of the fighters
    * its storing currently
-   */<span class="fstat-no" title="function not covered" ></span>
-  pu<span class="cstat-no" title="statement not covered" >blic print(): string {<span class="fstat-no" title="function not covered" ></span></span>
-    re<span class="cstat-no" title="statement not covered" >turn this.getFighterList().map((item) =&gt; {</span>
-      re<span class="cstat-no" title="statement not covered" >turn item.getName();</span>
+   */
+  public print(): string {
+    return this.getFighterList().map((item) =&gt; {
+      return item.getName();
     }).join();
   }
 &nbsp;
@@ -202,7 +202,7 @@ export class Pokedex {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Mar 27 2021 20:10:27 GMT+0000 (hora estándar de Europa occidental)
+                at Tue Mar 30 2021 17:44:45 GMT+0100 (hora de verano de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>

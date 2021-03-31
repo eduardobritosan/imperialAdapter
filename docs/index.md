@@ -70,6 +70,7 @@ Luego se diseño la clase BasicStreamableCollection solicitada en el guión, imp
 ![basicStreamableCollection](img/e3-basic.png)
 
 Por último, aquí un ejemplo de la implementacion de la clase MovieCollection, utilizando el tipo movie.
+
 ![Tipo movie](img/e3-movietype.png)
 ![Clase movieCollection](img/e3-movie.png)
 

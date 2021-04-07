@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.33% </span>
+                <span class="strong">13.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/15</span>
+                <span class='fraction'>2/15</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.85% </span>
+                <span class="strong">7.69% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>7/13</span>
+                <span class='fraction'>1/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.67% </span>
+                <span class="strong">16.67% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/12</span>
+                <span class='fraction'>2/12</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -133,18 +133,18 @@
 <a name='L74'></a><a href='#L74'>74</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -160,7 +160,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -176,7 +176,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -192,7 +192,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -205,19 +205,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export class ImperialLength {
   constructor(private valueInInches: number) { }
-  public getValue(): number {
-    return this.valueInInches;
+  public <span class="fstat-no" title="function not covered" >getValue(</span>): number {
+<span class="cstat-no" title="statement not covered" >    return this.valueInInches;</span>
   }
 &nbsp;
-  public setValue(valueInInches: number): void {
-    this.valueInInches = valueInInches;
+  public <span class="fstat-no" title="function not covered" >setValue(</span>valueInInches: number): void {
+<span class="cstat-no" title="statement not covered" >    this.valueInInches = valueInInches;</span>
   }
   /**
    * Returns the value as foot
    * @returns Value as foot
    */
-  public getFoot() {
-    return this.getValue() / 12;
+  public <span class="fstat-no" title="function not covered" >getFoot(</span>) {
+<span class="cstat-no" title="statement not covered" >    return this.getValue() / 12;</span>
   }
 &nbsp;
   /**
@@ -232,8 +232,8 @@
    * Returns the object's value as yards
    * @returns value as yards
    */
-  public getYards() {
-<span class="cstat-no" title="statement not covered" >    return this.getValue() / 36;</span>
+  public <span class="fstat-no" title="function not covered" >getYards(</span>) {
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    return this.getValue() / 36;</span></span>
   }
 &nbsp;
   /**
@@ -248,8 +248,8 @@
  * Returns the object's value as miles
  * @returns value as miles
  */
-  public getMiles() {
-    return this.getValue() / 63360;
+  public <span class="fstat-no" title="function not covered" >getMiles(</span>) {
+<span class="cstat-no" title="statement not covered" >    return this.getValue() / 63360;</span>
   }
 &nbsp;
   /**
@@ -264,8 +264,8 @@
    * Returns the object's value as nautical miles
    * @returns value as nautical miles
    */
-  public getNauticalMiles() {
-    return this.getValue() / 72913;
+  public <span class="fstat-no" title="function not covered" >getNauticalMiles(</span>) {
+<span class="cstat-no" title="statement not covered" >    return this.getValue() / 72913;</span>
   }
 &nbsp;
   /**
@@ -283,7 +283,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Apr 07 2021 10:34:22 GMT+0100 (hora de verano de Europa occidental)
+                at Wed Apr 07 2021 10:49:23 GMT+0100 (hora de verano de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>

@@ -14,7 +14,7 @@ describe('MetricLength methods tests', () => {
   it('milimeterInstance is expected to be correctly converted', () => {
     expect(milimeterInstance.getMeter().toFixed(2)).to.
       equal('0.01');
-    expect(milimeterInstance.getKilometer().toFixed(5)).to.
-      equal('0.00001');
+    expect(milimeterInstance.getKilometer()).to.
+      equal(0.00001);
   });
 });

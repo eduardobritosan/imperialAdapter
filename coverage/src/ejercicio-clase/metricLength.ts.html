@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/ejercicio-clase/imperialLength.ts</title>
+    <title>Code coverage report for src/ejercicio-clase/metricLength.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/ejercicio-clase</a> imperialLength.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/ejercicio-clase</a> metricLength.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.33% </span>
+                <span class="strong">70% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/15</span>
+                <span class='fraction'>7/10</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.85% </span>
+                <span class="strong">66.67% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>7/13</span>
+                <span class='fraction'>6/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.67% </span>
+                <span class="strong">70% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/12</span>
+                <span class='fraction'>7/10</span>
             </div>
         
             
@@ -114,26 +114,10 @@
 <a name='L55'></a><a href='#L55'>55</a>
 <a name='L56'></a><a href='#L56'>56</a>
 <a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a>
-<a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a>
-<a name='L71'></a><a href='#L71'>71</a>
-<a name='L72'></a><a href='#L72'>72</a>
-<a name='L73'></a><a href='#L73'>73</a>
-<a name='L74'></a><a href='#L74'>74</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L58'></a><a href='#L58'>58</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -187,93 +171,61 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export class ImperialLength {
-  constructor(private valueInInches: number) { }
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export class MetricLength {
+  constructor(private valueInMilimeters: number) { }
   public getValue(): number {
-    return this.valueInInches;
+    return this.valueInMilimeters;
   }
 &nbsp;
-  public setValue(valueInInches: number): void {
-    this.valueInInches = valueInInches;
+  public setValue(valueInMilimeters: number): void {
+    this.valueInMilimeters = valueInMilimeters;
   }
   /**
-   * Returns the value as foot
-   * @returns Value as foot
+   * Returns the value as centimeter
+   * @returns Value as centimeter
    */
-  public getFoot() {
-    return this.getValue() / 12;
+  public getCentimeter() {
+    return this.getValue() / 10;
   }
 &nbsp;
   /**
-   * Reads foot and saves it in value
-   * @param value the value in feet
+   * Reads centimeter and saves it in value
+   * @param value the value in centimeter
    */
-  public <span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >setFoot(</span>v</span>alue: number) {
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    this.setValue(this.getValue()</span> * 12);</span>
+  public <span class="fstat-no" title="function not covered" >setCentimeter(</span>value: number) {
+<span class="cstat-no" title="statement not covered" >    this.setValue(this.getValue() * 10);</span>
   }
 &nbsp;
   /**
-   * Returns the object's value as yards
-   * @returns value as yards
+   * Returns the object's value as meter
+   * @returns value as meter
    */
-  public getYards() {
-<span class="cstat-no" title="statement not covered" >    return this.getValue() / 36;</span>
+  public getMeter() {
+    return this.getValue() / 1000;
   }
 &nbsp;
   /**
-   * Reads yards and saves it in value
-   * @param value the value in yards
+   * Reads meter and saves it in value
+   * @param value the value in meter
    */
-  public <span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >setYard(</span>value: nu</span>mber) {
-<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >    this.setValue(this.getValue() * </span>36);</span>
+  public <span class="fstat-no" title="function not covered" >setMeter(</span>value: number) {
+<span class="cstat-no" title="statement not covered" >    this.setValue(this.getValue() * 1000);</span>
   }
 &nbsp;
   /**
- * Returns the object's value as miles
- * @returns value as miles
+ * Returns the object's value as kilometer
+ * @returns value as kilometer
  */
-  public getMiles() {
-    return this.getValue() / 63360;
+  public getKilometer() {
+    return this.getValue() / 1000000;
   }
 &nbsp;
   /**
-   * Reads miles and saves it in value
-   * @param value the value in miles
+   * Reads kilometer and saves it in value
+   * @param value the value in kilometer
    */
-  public <span class="fstat-no" title="function not covered" >setMiles(</span>value: number) {
-<span class="cstat-no" title="statement not covered" >    this.setValue(this.getValue() * 63360);</span>
-  }
-&nbsp;
-  /**
-   * Returns the object's value as nautical miles
-   * @returns value as nautical miles
-   */
-  public getNauticalMiles() {
-    return this.getValue() / 72913;
-  }
-&nbsp;
-  /**
-   * Reads nautical miles and saves it in value
-   * @param value the value in nautical miles
-   */
-  public <span class="fstat-no" title="function not covered" >setNauticalMiles(</span>value: number) {
-<span class="cstat-no" title="statement not covered" >    this.setValue(this.getValue() * 72913);</span>
+  public <span class="fstat-no" title="function not covered" >setKilometers(</span>value: number) {
+<span class="cstat-no" title="statement not covered" >    this.setValue(this.getValue() * 0.000001);</span>
   }
 }
 &nbsp;</pre></td></tr></table></pre>

@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>13/13</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -77,23 +77,23 @@
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -101,20 +101,20 @@
 import { expect } from 'chai';
 import { MetricLength } from '../../src/ejercicio-clase/metricLength';
 &nbsp;
-<span class="cstat-no" title="statement not covered" >describe('MetricLength methods tests', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-  const milimeterInstance = <span class="cstat-no" title="statement not covered" >new MetricLength(1);</span>
-<span class="cstat-no" title="statement not covered" >  it('milimeterInstance is expected to be correctly initialized', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    expect(milimeterInstance.getValue()).to.equal(1);</span>
+describe('MetricLength methods tests', () =&gt; {
+  const milimeterInstance = new MetricLength(1);
+  it('milimeterInstance is expected to be correctly initialized', () =&gt; {
+    expect(milimeterInstance.getValue()).to.equal(1);
   });
-<span class="cstat-no" title="statement not covered" >  it('milimeterInstance is expected to change when using setters', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    milimeterInstance.setValue(10);</span>
-<span class="cstat-no" title="statement not covered" >    expect(milimeterInstance.getCentimeter()).to.equal(1);</span>
+  it('milimeterInstance is expected to change when using setters', () =&gt; {
+    milimeterInstance.setValue(10);
+    expect(milimeterInstance.getCentimeter()).to.equal(1);
   });
-<span class="cstat-no" title="statement not covered" >  it('milimeterInstance is expected to be correctly converted', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    expect(milimeterInstance.getMeter().toFixed(2)).to.</span>
+  it('milimeterInstance is expected to be correctly converted', () =&gt; {
+    expect(milimeterInstance.getMeter().toFixed(2)).to.
       equal('0.01');
-<span class="cstat-no" title="statement not covered" >    expect(milimeterInstance.getKilometer().toFixed(5)).to.</span>
-      equal('0.00001');
+    expect(milimeterInstance.getKilometer()).to.
+      equal(0.00001);
   });
 });
 &nbsp;</pre></td></tr></table></pre>
@@ -124,7 +124,7 @@ import { MetricLength } from '../../src/ejercicio-clase/metricLength';
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Apr 07 2021 10:16:00 GMT+0100 (hora de verano de Europa occidental)
+                at Wed Apr 07 2021 10:34:22 GMT+0100 (hora de verano de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>

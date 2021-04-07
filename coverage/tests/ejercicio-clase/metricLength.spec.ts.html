@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for tests/ejercicio-clase/imperialLength.spec.ts</title>
+    <title>Code coverage report for tests/ejercicio-clase/metricLength.spec.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">tests/ejercicio-clase</a> imperialLength.spec.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">tests/ejercicio-clase</a> metricLength.spec.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">57.14% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/14</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/4</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">57.14% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/14</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -77,24 +77,20 @@
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -103,24 +99,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'mocha';
 import { expect } from 'chai';
-import { ImperialLength } from '../../src/ejercicio-clase/imperialLength';
+import { MetricLength } from '../../src/ejercicio-clase/metricLength';
 &nbsp;
-describe('ImperialLength methods tests', () =&gt; {
-  const inchInstance = new ImperialLength(1);
-  it('inchInstance is expected to be correctly initialized', <span class="fstat-no" title="function not covered" >() =</span>&gt; {
-<span class="cstat-no" title="statement not covered" >    expect(inchInstance.getValue()).to.equal(1);</span>
+<span class="cstat-no" title="statement not covered" >describe('MetricLength methods tests', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+  const milimeterInstance = <span class="cstat-no" title="statement not covered" >new MetricLength(1);</span>
+<span class="cstat-no" title="statement not covered" >  it('milimeterInstance is expected to be correctly initialized', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    expect(milimeterInstance.getValue()).to.equal(1);</span>
   });
-  it('inchInstance is expected to change when using setters', <span class="fstat-no" title="function not covered" >() =</span>&gt; {
-<span class="cstat-no" title="statement not covered" >    inchInstance.setValue(12);</span>
-<span class="cstat-no" title="statement not covered" >    expect(inchInstance.getFoot()).to.equal(1);</span>
+<span class="cstat-no" title="statement not covered" >  it('milimeterInstance is expected to change when using setters', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    milimeterInstance.setValue(10);</span>
+<span class="cstat-no" title="statement not covered" >    expect(milimeterInstance.getCentimeter()).to.equal(1);</span>
   });
-  it('inchInstance is expected to be correctly converted', <span class="fstat-no" title="function not covered" >() =</span>&gt; {
-<span class="cstat-no" title="statement not covered" >    expect(inchInstance.getYards().toFixed(2)).to.</span>
-      equal('0.33');
-<span class="cstat-no" title="statement not covered" >    expect(inchInstance.getMiles().toFixed(5)).to.</span>
-      equal('0.00019');
-<span class="cstat-no" title="statement not covered" >    expect(inchInstance.getNauticalMiles().toFixed(5)).to.</span>
-      equal('0.00016');
+<span class="cstat-no" title="statement not covered" >  it('milimeterInstance is expected to be correctly converted', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    expect(milimeterInstance.getMeter().toFixed(2)).to.</span>
+      equal('0.01');
+<span class="cstat-no" title="statement not covered" >    expect(milimeterInstance.getKilometer().toFixed(5)).to.</span>
+      equal('0.00001');
   });
 });
 &nbsp;</pre></td></tr></table></pre>

@@ -1,7 +1,8 @@
 {
   "entryPoints": [
     "src/ejercicio-clase/imperialLength.ts",
-    "src/ejercicio-clase/metricLength.ts"
+    "src/ejercicio-clase/metricLength.ts",
+    "src/ejercicio-clase/lengthAdapter.ts"
   ],
   "out": "typedocs"
 }

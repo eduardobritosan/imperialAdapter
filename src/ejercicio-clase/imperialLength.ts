@@ -20,7 +20,7 @@ export class ImperialLength {
    * @param value the value in feet
    */
   public setFoot(value: number) {
-    this.setValue(this.getValue() * 12);
+    this.setValue(value * 12);
   }
 
   /**
@@ -36,7 +36,7 @@ export class ImperialLength {
    * @param value the value in yards
    */
   public setYard(value: number) {
-    this.setValue(this.getValue() * 36);
+    this.setValue(value * 36);
   }
 
   /**
@@ -52,7 +52,7 @@ export class ImperialLength {
    * @param value the value in miles
    */
   public setMiles(value: number) {
-    this.setValue(this.getValue() * 63360);
+    this.setValue(value * 63360);
   }
 
   /**
@@ -68,6 +68,6 @@ export class ImperialLength {
    * @param value the value in nautical miles
    */
   public setNauticalMiles(value: number) {
-    this.setValue(this.getValue() * 72913);
+    this.setValue(value * 72913);
   }
 }

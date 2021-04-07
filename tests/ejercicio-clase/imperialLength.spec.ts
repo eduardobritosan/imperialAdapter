@@ -19,4 +19,9 @@ describe('ImperialLength methods tests', () => {
     expect(inchInstance.getNauticalMiles().toFixed(5)).to.
       equal('0.00016');
   });
+  it('inchInstance is expected to be correctly converted', () => {
+    inchInstance.setFoot(50);
+    expect(inchInstance.getValue()).to.
+      equal(600);
+  });
 });

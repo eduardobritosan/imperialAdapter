@@ -20,7 +20,7 @@ export class MetricLength {
    * @param value the value in centimeter
    */
   public setCentimeter(value: number) {
-    this.setValue(this.getValue() * 10);
+    this.setValue(value * 10);
   }
 
   /**
@@ -36,7 +36,7 @@ export class MetricLength {
    * @param value the value in meter
    */
   public setMeter(value: number) {
-    this.setValue(this.getValue() * 1000);
+    this.setValue(value * 1000);
   }
 
   /**
@@ -52,6 +52,6 @@ export class MetricLength {
    * @param value the value in kilometer
    */
   public setKilometers(value: number) {
-    this.setValue(this.getValue() * 0.000001);
+    this.setValue(value * 0.000001);
   }
 }

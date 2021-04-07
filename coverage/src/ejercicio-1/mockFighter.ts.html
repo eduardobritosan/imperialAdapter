@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -68,42 +68,36 @@
 <a name='L9'></a><a href='#L9'>9</a>
 <a name='L10'></a><a href='#L10'>10</a>
 <a name='L11'></a><a href='#L11'>11</a>
-<a name='L12'></a><a href='#L12'>12</a>
-<a name='L13'></a><a href='#L13'>13</a>
-<a name='L14'></a><a href='#L14'>14</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Fighter } from './fighter';
-&nbsp;
-export class MockFighter extends Fighter {
-  constructor(name: string, height: number,
-    weight: number, attack: number,
-    defense: number, speed: number) {
-    super(name, height, weight, attack, defense, speed);
-  }
-&nbsp;
-  public talk() {
-    return `I\'m ${this.getName()} I really don\'t exist`;
-  }
-}
-&nbsp;</pre></td></tr></table></pre>
+<a name='L12'></a><a href='#L12'>12</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span>
+<span class="cline-any cline-no">0</span></td><td class="text"><pre class="prettyprint lang-js">Unable to lookup source: /home/usuario/prct06-generics/src/ejercicio-1/mockFighter.ts (ENOENT: no such file or directory, open '/home/usuario/prct06-generics/src/ejercicio-1/mockFighter.ts')
+Error: Unable to lookup source: /home/usuario/prct06-generics/src/ejercicio-1/mockFighter.ts (ENOENT: no such file or directory, open '/home/usuario/prct06-generics/src/ejercicio-1/mockFighter.ts')
+    at Context.defaultSourceLookup [as sourceFinder] (/home/usuario/prct06-generics/node_modules/istanbul-lib-report/lib/context.js:17:15)
+    at Context.getSource (/home/usuario/prct06-generics/node_modules/istanbul-lib-report/lib/context.js:71:21)
+    at annotateSourceCode (/home/usuario/prct06-generics/node_modules/istanbul-reports/lib/html/annotator.js:213:40)
+    at HtmlReport.onDetail (/home/usuario/prct06-generics/node_modules/istanbul-reports/lib/html/index.js:409:33)
+    at Visitor.value (/home/usuario/prct06-generics/node_modules/istanbul-lib-report/lib/tree.js:38:38)
+    at ReportNode.visit (/home/usuario/prct06-generics/node_modules/istanbul-lib-report/lib/tree.js:88:21)
+    at /home/usuario/prct06-generics/node_modules/istanbul-lib-report/lib/tree.js:92:19
+    at Array.forEach (<anonymous>)
+    at ReportNode.visit (/home/usuario/prct06-generics/node_modules/istanbul-lib-report/lib/tree.js:91:28)
+    at /home/usuario/prct06-generics/node_modules/istanbul-lib-report/lib/tree.js:92:19</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Mar 31 2021 19:33:11 GMT+0100 (hora de verano de Europa occidental)
+                at Wed Apr 07 2021 10:08:40 GMT+0100 (hora de verano de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>

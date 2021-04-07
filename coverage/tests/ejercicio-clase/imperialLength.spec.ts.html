@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for tests/ejercicio-1/pokedex.spec.ts</title>
+    <title>Code coverage report for tests/ejercicio-clase/imperialLength.spec.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">tests/ejercicio-1</a> pokedex.spec.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">tests/ejercicio-clase</a> imperialLength.spec.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -78,46 +78,49 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'mocha';
 import { expect } from 'chai';
-import { Pokedex } from '../../src/ejercicio-1/pokedex';
-import { Goku } from '../../src/ejercicio-1/goku';
-import { Pikachu } from '../../src/ejercicio-1/pikachu';
-import { Flash } from '../../src/ejercicio-1/flash';
+import { ImperialLength } from '../../src/ejercicio-clase/imperialLength';
 &nbsp;
-<span class="cstat-no" title="statement not covered" >describe('Pokedex methods tests', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-  const goku = <span class="cstat-no" title="statement not covered" >new Goku();</span>
-  const pika = <span class="cstat-no" title="statement not covered" >new Pikachu();</span>
-  const flash = <span class="cstat-no" title="statement not covered" >new Flash();</span>
-  const pokedex = <span class="cstat-no" title="statement not covered" >new Pokedex();</span>
-<span class="cstat-no" title="statement not covered" >  it('pokedex is expected to be correctly add new elements', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    pokedex.add(goku, pika, flash);</span>
-<span class="cstat-no" title="statement not covered" >    expect(pokedex.print()).to.equal('Son Goku,Pikachu,The Flash');</span>
+describe('ImperialLength methods tests', () =&gt; {
+  const inchInstance = new ImperialLength(1);
+  it('inchInstance is expected to be correctly initialized', () =&gt; {
+    expect(inchInstance.getValue()).to.equal(1);
   });
-<span class="cstat-no" title="statement not covered" >  it('pokedex is expected to be correctly remove elements', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    pokedex.remove('Pikachu');</span>
-<span class="cstat-no" title="statement not covered" >    expect(pokedex.print()).to.equal('Son Goku,The Flash');</span>
+  it('inchInstance is expected to change when using setters', () =&gt; {
+    inchInstance.setValue(12);
+    expect(inchInstance.getFoot()).to.equal(1);
+  });
+  it('inchInstance is expected to be correctly converted', () =&gt; {
+    expect(inchInstance.getYards().toFixed(2)).to.
+      equal('0.33');
+    expect(inchInstance.getMiles().toFixed(5)).to.
+      equal('0.00019');
+    expect(inchInstance.getNauticalMiles().toFixed(5)).to.
+      equal('0.00016');
   });
 });
 &nbsp;</pre></td></tr></table></pre>
@@ -127,7 +130,7 @@ import { Flash } from '../../src/ejercicio-1/flash';
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Apr 07 2021 09:59:46 GMT+0100 (hora de verano de Europa occidental)
+                at Wed Apr 07 2021 10:08:40 GMT+0100 (hora de verano de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>

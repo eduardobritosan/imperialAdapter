@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for tests/ejercicio-2/second.spec.ts</title>
+    <title>Code coverage report for tests/ejercicio-clase/impLength.spec.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">tests/ejercicio-2</a> second.spec.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">tests/ejercicio-clase</a> impLength.spec.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
@@ -79,11 +79,7 @@
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -97,42 +93,34 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'mocha';
 import { expect } from 'chai';
-import { Second } from '../../src/ejercicio-2/second';
+import { ImperialLength } from '../../src/ejercicio-2/imperialLength';
 &nbsp;
-<span class="cstat-no" title="statement not covered" >describe('Second methods tests', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-  const secondInstance = <span class="cstat-no" title="statement not covered" >new Second(20);</span>
-<span class="cstat-no" title="statement not covered" >  it('secondInstance is expected to be correctly initialized', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    expect(secondInstance.getValue()).to.equal(20);</span>
+<span class="cstat-no" title="statement not covered" >describe('ImperialLength methods tests', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+  const inchInstance = <span class="cstat-no" title="statement not covered" >new ImperialLength(1);</span>
+<span class="cstat-no" title="statement not covered" >  it('inchInstance is expected to be correctly initialized', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    expect(inchInstance.getValue()).to.equal(1);</span>
   });
-<span class="cstat-no" title="statement not covered" >  it('secondInstance is expected to change when using setters', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    secondInstance.setValue(120);</span>
-<span class="cstat-no" title="statement not covered" >    expect(secondInstance.getValue()).to.equal(120);</span>
+<span class="cstat-no" title="statement not covered" >  it('inchInstance is expected to change when using setters', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    inchInstance.setValue(12);</span>
+<span class="cstat-no" title="statement not covered" >    expect(inchInstance.getFoot()).to.equal(1);</span>
   });
-<span class="cstat-no" title="statement not covered" >  it('secondInstance is expected to be correctly converted when passed' +</span>
-    ' the correct strings', <span class="fstat-no" title="function not covered" >()</span> =&gt; {
-<span class="cstat-no" title="statement not covered" >      expect(secondInstance.convert('minutes')).to.</span>
-        equal(2);
-<span class="cstat-no" title="statement not covered" >      expect(secondInstance.convert('hours')).to.</span>
-        equal(0.0033333333333333335);
-    });
-<span class="cstat-no" title="statement not covered" >  it('secondInstance is expected to be return undefined when passed' +</span>
-    ' incorrect strings', <span class="fstat-no" title="function not covered" >()</span> =&gt; {
-<span class="cstat-no" title="statement not covered" >      expect(secondInstance.convert('yard')).to.be.undefined;</span>
-<span class="cstat-no" title="statement not covered" >      expect(secondInstance.convert('shrek')).to.be.undefined;</span>
+<span class="cstat-no" title="statement not covered" >  it('inchInstance is expected to be correctly converted', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      expect(inchInstance.getYards().toFixed(2)).to.</span>
+        equal('0.33');
+<span class="cstat-no" title="statement not covered" >        expect(inchInstance.getMiles().toFixed(5)).to.</span>
+        equal('0.00018');
+<span class="cstat-no" title="statement not covered" >        expect(inchInstance.getNauticalMiles().toFixed(5)).to.</span>
+        equal('0.00016');
     });
 });
 &nbsp;</pre></td></tr></table></pre>
@@ -142,7 +130,7 @@ import { Second } from '../../src/ejercicio-2/second';
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Apr 07 2021 09:59:46 GMT+0100 (hora de verano de Europa occidental)
+                at Wed Apr 07 2021 10:00:47 GMT+0100 (hora de verano de Europa occidental)
             </div>
         </div>
         <script src="../../prettify.js"></script>
